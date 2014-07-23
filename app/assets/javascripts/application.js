@@ -19,5 +19,6 @@
 //= gridGallery.js
 //= gridGallery.min
 //= jquery.modernizr.min.js
+//= require ckeditor/init
 //= require_tree .
 
