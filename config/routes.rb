@@ -1,4 +1,21 @@
 Launcherr::Application.routes.draw do
+  get "pages/jobs"
+  get "pages/press"
+  get "pages/help"
+  get "pages/policies"
+  get "pages/terms"
+  get "pages/privacy"
+  get "pages/trustsafety"
+  get "pages/invitefriends"
+  get "pages/projectswelove"
+  get "pages/mobile"
+  get "pages/supportcreativity"
+  get "pages/sitemap"
+  get "pages/prepareproject"
+  get "pages/protectingyouridea"
+  get "pages/projectguidelines"
+  get "pages/stories"
+  get "pages/joiningteams"
   get 'tags/:tag', to: 'posts#index', as: :tag
   resources :posts  do  #->Prelang (voting/acts_as_votable)
   collection do
