@@ -84,6 +84,7 @@
 				<div class="right-float" style="text-align: left">
 						<nav id="main-nav">
 							<ul>
+		  <li><a class="popup-text" href="#login-dialog" data-effect="mfp-move-from-top" data-toggle="modal" data-target="#login">Home </a></li>
           <li><%= link_to "Login", new_user_session_path %></li>
           <li><%= link_to "Sign Up", new_user_registration_path %></li>
         <% end %>
@@ -182,6 +183,78 @@ Startups<br>
                <font color="#434343">   © Launcherr, inc </font>
                  					<!-- END four -->
 
+<!-- login -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><br><br><br>
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+						</button>
+						<center>
+							<h4 class="modal-title" id="myModalLabel" >Welcome To Lenderrr</h4>
+							<br>
+
+							<%= image_tag("fblogin.png", :mouseover => "fblogginpressed.png", :size => "64x64", :alt => "Show Group") %>
+
+							<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: "form-horizontal form-user"}) do |f| %>
+  <%= devise_error_messages! %>
+
+  
+  <div class="form-group">
+    <%= f.label :username, class: "control-label col-md-4" %>
+    <div class="col-md-8">
+      <%= f.text_field :username, class: "text-field form-control", html: {spellcheck: "false"} %>
+    </div>
+  </div>
+  
+
+  <div class="form-group">
+    <%= f.label :email, class: "control-label col-md-4" %>
+    <div class="col-md-8">
+      <%= f.email_field :email, class: "text-field form-control", html: {spellcheck: "false"} %>
+    </div>
+  </div>
+    
+  <div class="form-group">
+    <%= f.label :password, class: "control-label col-md-4" %>
+    <div class="col-md-8">
+      <%= f.password_field :password, class: "text-field form-control", html: {autocomplete: "off"} %>
+    </div>
+  </div>
+     
+  <div class="form-group">
+    <%= f.label :password_confirmation, "Password Confirmation", class: "control-label col-md-4" %>
+    <div class="col-md-8">
+      <%= f.password_field :password_confirmation, class: "text-field form-control", html: {autocomplete: "off"} %>
+    </div>
+  </div>
+     <br><br>
+  <div class="form-group">
+    <div class="col-md-offset-4 col-md-8">
+      <%= f.submit "Sign Up", class: "sr-button sr-button3 medium-button" %>
+    </div>
+  </div>
+<br><br>
+  <div class="form-group">
+    <div class="col-md-offset-4 col-md-8">
+      <%= render "devise/shared/links" %>
+    </div>
+  </div></div><br><br>
+  <aside class="right-float">
+
+  <p> xx </p>
+</aside>
+
+
+<% end %>
+						</center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 					 
 					
