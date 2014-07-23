@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140711182962) do
+ActiveRecord::Schema.define(version: 20140714211109) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -62,52 +62,25 @@ ActiveRecord::Schema.define(version: 20140711182962) do
 
   add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
 
-  create_table "mailboxer_conversations", force: true do |t|
-    t.string   "subject",    default: ""
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
-  end
-
-  create_table "mailboxer_notifications", force: true do |t|
-    t.string   "type"
-    t.text     "body"
-    t.string   "subject",              default: ""
-    t.integer  "sender_id"
-    t.string   "sender_type"
-    t.integer  "conversation_id"
-    t.boolean  "draft",                default: false
-    t.string   "notification_code"
-    t.integer  "notified_object_id"
-    t.string   "notified_object_type"
-    t.string   "attachment"
-    t.datetime "updated_at",                           null: false
-    t.datetime "created_at",                           null: false
-    t.boolean  "global",               default: false
-    t.datetime "expires"
-  end
-
-  add_index "mailboxer_notifications", ["conversation_id"], name: "index_mailboxer_notifications_on_conversation_id", using: :btree
-
-  create_table "mailboxer_receipts", force: true do |t|
-    t.integer  "receiver_id"
-    t.string   "receiver_type"
-    t.integer  "notification_id",                            null: false
-    t.boolean  "is_read",                    default: false
-    t.boolean  "trashed",                    default: false
-    t.boolean  "deleted",                    default: false
-    t.string   "mailbox_type",    limit: 25
-    t.datetime "created_at",                                 null: false
-    t.datetime "updated_at",                                 null: false
-  end
-
-  add_index "mailboxer_receipts", ["notification_id"], name: "index_mailboxer_receipts_on_notification_id", using: :btree
-
   create_table "messages", force: true do |t|
+    t.string   "topic"
     t.text     "body"
+    t.integer  "received_messageable_id"
+    t.string   "received_messageable_type"
+    t.integer  "sent_messageable_id"
+    t.string   "sent_messageable_type"
+    t.boolean  "opened",                     default: false
+    t.boolean  "recipient_delete",           default: false
+    t.boolean  "sender_delete",              default: false
     t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "ancestry"
     t.boolean  "recipient_permanent_delete", default: false
     t.boolean  "sender_permanent_delete",    default: false
   end
+
+  add_index "messages", ["ancestry"], name: "index_messages_on_ancestry", using: :btree
+  add_index "messages", ["sent_messageable_id", "received_messageable_id"], name: "acts_as_messageable_ids", using: :btree
 
   create_table "posts", force: true do |t|
     t.string   "project_name"
@@ -118,7 +91,6 @@ ActiveRecord::Schema.define(version: 20140711182962) do
     t.text     "to_the_table"
     t.text     "compensation_method"
     t.string   "location"
-    t.text     "tags"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "coverimage_file_name"
@@ -129,8 +101,8 @@ ActiveRecord::Schema.define(version: 20140711182962) do
     t.string   "logoimage_content_type"
     t.integer  "logoimage_file_size"
     t.datetime "logoimage_updated_at"
-    t.string   "skills"
     t.string   "url"
+    t.string   "skills"
   end
 
   add_index "posts", ["user_id"], name: "index_posts_on_user_id", using: :btree
@@ -186,8 +158,10 @@ ActiveRecord::Schema.define(version: 20140711182962) do
     t.string   "uid"
     t.string   "name"
     t.string   "username"
+    t.string   "ancestry"
   end
 
+  add_index "users", ["ancestry"], name: "index_users_on_ancestry", using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
