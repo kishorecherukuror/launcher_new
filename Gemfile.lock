@@ -139,6 +139,8 @@ GEM
       multipart-post (>= 1.2, < 3)
     formtastic (2.3.0.rc3)
       actionpack (>= 3.0)
+    friendly_id (5.0.4)
+      activerecord (>= 4.0.0)
     google-analytics-rails (0.0.6)
     has_scope (0.6.0.rc)
       actionpack (>= 3.2, < 5)
@@ -284,6 +286,7 @@ DEPENDENCIES
   delayed_job!
   delayed_job_active_record!
   devise!
+  friendly_id (~> 5.0.1)
   google-analytics-rails
   jbuilder (~> 1.2)
   jquery-rails

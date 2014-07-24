@@ -1,5 +1,6 @@
 class CreatePosts < ActiveRecord::Migration
   def change
+   # add_index :posts, :slug, unique: true
     create_table :posts do |t|
       t.string :project_name
       t.text :quick_pitch
@@ -11,7 +12,9 @@ class CreatePosts < ActiveRecord::Migration
       t.string :location
       t.text :tags
 
+
       t.timestamps
     end
+
   end
 end

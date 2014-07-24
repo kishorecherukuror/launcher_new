@@ -27,6 +27,9 @@
 #
 
 class Post < ActiveRecord::Base
+	 extend FriendlyId
+  friendly_id :project_name, use: :slugged
+  
   belongs_to :user
  
   attr_accessible :project_name, :quick_pitch, :coverimage, :logoimage, :full_pitch, :skills, :youtube_id, :to_the_table, :compensation_method, :location, :url, :content, :name, :tag_list
@@ -36,6 +39,7 @@ class Post < ActiveRecord::Base
 
  validates_attachment :coverimage, content_type: { content_type: /\Aimage\/.*\Z/ }
  validates_attachment :logoimage, content_type: { content_type: /\Aimage\/.*\Z/ } 
+ validates :project_name, uniqueness: true
  #validates_formatting_of :youtube_id, using: :url
   # acts_as_votable 
   #attr_accessible :content, :name, :tag_list
