@@ -40,7 +40,7 @@
                 </div>
                 <!-- MAIN DESCRIPTION -->
                 <br> <h5><strong>About <%= @post.project_name %> </h6></strong>
-<br><%= @post.full_pitch %>
+<br><%= raw @post.full_pitch %>
 <br>
 
               <!-- COMPENSATION --></p>
@@ -126,7 +126,7 @@
     <div class="column-section clearfix">
                   <div class="column one-half"> 
                     <form id="contact-form" class="checkform" action="#" target="contact-send.php" method="post" >
-                            
+                           
                           <div class="form-row clearfix textbox">
                               <label for="message" class="req">What can you bring to <%= @post.project_name %> </label>
                               <div class="form-value"><textarea name="message" class="message" id="message" rows="15" cols="50"></textarea></div>
