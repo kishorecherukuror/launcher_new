@@ -1,5 +1,6 @@
 Launcherr::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
+  get '/page/index' => redirect('/page')
   get "pages/jobs"
   get "pages/press"
   get "pages/help"

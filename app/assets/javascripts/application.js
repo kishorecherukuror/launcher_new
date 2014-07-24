@@ -11,8 +11,9 @@
 // about supported directives.
 //
 //= require jquery
-//= require bootstrap
 //= require jquery_ujs
+//= require jquery-ui
+//= require bootstrap
 //= require turbolinks
 //= jquery-1.9.1.min.js
 //= rotate-patch.js
