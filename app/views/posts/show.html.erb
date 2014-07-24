@@ -79,13 +79,15 @@
                                   <br>
                                   <a data-toggle="modal" href="#myModal" class="sr-button sr-button5 big-button">JØIN TEAM</a></p>
                 
-                 
+                  
                   <h6> <i class="fa fa-map-marker"> </i> <%= @post.location %></h6>
                   <h6> <i class="fa fa-link"> </i> <%= @post.url %></h6>
                   <h6> <i class="fa fa-clock-o"> </i> <%= @post.created_at %></i>.</h6><br><br>
                   <p><!-- END LOCATION -->
                                   
-                        </p><br><br><br>
+                        </p><br>
+                        <%= image_tag("map.jpg", :size => "64x64", :alt => "Show Group") %>
+                        <br><br>
                                   
                                   
                                 
@@ -125,8 +127,7 @@
   <div class="modal-body">
     <div class="column-section clearfix">
                   <div class="column one-half"> 
-                    <form id="contact-form" class="checkform" action="#" target="contact-send.php" method="post" >
-                           
+                    <form id="contact-form" class="checkform" action="#" target="contact-send.php" method="post" > 
                           <div class="form-row clearfix textbox">
                               <label for="message" class="req">What can you bring to <%= @post.project_name %> </label>
                               <div class="form-value"><textarea name="message" class="message" id="message" rows="15" cols="50"></textarea></div>

@@ -114,4 +114,11 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:project_name, :quick_pitch, :coverimage, :logoimage, :full_pitch, :skills , :user_id, :youtube_id, :to_the_table, :compensation_method, :location,:url, :body, :topic,:content, :name, :tag_list)
     end
+
+#search field for geocoder
+#    if params[:search].present?
+#   @locations = Location.near(params[:search], 50, :order => :distance)
+#  else
+#   @locations = Location.all
+#    end
 end
