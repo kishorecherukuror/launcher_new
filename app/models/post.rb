@@ -44,6 +44,8 @@ class Post < ActiveRecord::Base
   # acts_as_votable 
   #attr_accessible :content, :name, :tag_list
 acts_as_taggable
-
-
+ 
+	extend FriendlyId
+ 	 friendly_id :project_name
+ 	 
 end

@@ -71,3 +71,5 @@ gem 'protected_attributes'
 gem 'pry'
 gem 'annotate'
 gem 'ckeditor'
+gem 'friendly_id', '~> 5.0.4'
+gem "geocoder"
