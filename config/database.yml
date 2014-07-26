@@ -14,7 +14,7 @@ development:
   database: launcherr
   pool: 5
   username: root
-  password: root
+  password: k4
 
   host: localhost
 

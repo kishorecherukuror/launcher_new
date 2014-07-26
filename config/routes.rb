@@ -1,4 +1,5 @@
 Launcherr::Application.routes.draw do
+  get "messages/index"
   mount Ckeditor::Engine => '/ckeditor'
   get '/page/index' => redirect('/page')
   get "pages/jobs"
@@ -28,7 +29,17 @@ Launcherr::Application.routes.draw do
     get "vote"
   end
 end
- 
+ namespace :api do
+   namespace :ajax do
+    resources :chat_filter_ajax
+    resources :add_chat_ajax
+    resources :chat_remove_ajax
+    resources :request_chat_ajax do
+      post "refresh_unreadMessages_ajax", on: :collection
+
+    end
+  end
+ end
 
   devise_for :users, controllers: {registrations: "users/registrations", sessions: "users/sessions", passwords: "users/passwords", omniauth_callbacks: "users/omniauth_callbacks"}, skip: [:sessions, :registrations]
   devise_for :admin_users, ActiveAdmin::Devise.config
