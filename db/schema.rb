@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140724180154) do
+ActiveRecord::Schema.define(version: 20140725095012) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -126,7 +126,6 @@ ActiveRecord::Schema.define(version: 20140724180154) do
     t.text     "to_the_table"
     t.text     "compensation_method"
     t.string   "location"
-    t.text     "tags"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "coverimage_file_name"
@@ -140,9 +139,26 @@ ActiveRecord::Schema.define(version: 20140724180154) do
     t.string   "url"
     t.string   "skills"
     t.string   "slug"
+    t.string   "category"
+    t.string   "latitude"
+    t.string   "longitude"
   end
 
   add_index "posts", ["user_id"], name: "index_posts_on_user_id", using: :btree
+
+  create_table "receipts", force: true do |t|
+    t.integer  "recipient_id"
+    t.integer  "sender_id"
+    t.integer  "message_id"
+    t.boolean  "read",         default: false
+    t.boolean  "trash",        default: false
+    t.datetime "created_at"
+  end
+
+  add_index "receipts", ["recipient_id", "read", "message_id"], name: "by_read", using: :btree
+  add_index "receipts", ["recipient_id", "trash", "message_id"], name: "by_trashed", using: :btree
+  add_index "receipts", ["sender_id", "message_id"], name: "by_sender", using: :btree
+  add_index "receipts", ["sender_id", "recipient_id", "trash", "message_id"], name: "by_readable", using: :btree
 
   create_table "taggings", force: true do |t|
     t.integer  "tag_id"

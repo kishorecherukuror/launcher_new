@@ -47681,3 +47681,4263 @@ Processing by Api::Ajax::RequestChatAjaxController#refresh_unreadMessages_ajax a
  recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 2 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 4 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0 ORDER BY created_at desc
   Rendered api/ajax/request_chat_ajax/refresh_unreadMessages_ajax.html.erb (0.1ms)
 Completed 200 OK in 9ms (Views: 4.9ms | ActiveRecord: 1.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-27 03:12:08 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.erb within layouts/application (72.2ms)
+  Rendered elements/_navbar.html.erb (1.9ms)
+Completed 200 OK in 4385ms (Views: 4356.3ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/files/css/bootstrap.min.css" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+ActionController::RoutingError (No route matches [GET] "/files/css/bootstrap.min.css"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.8ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (112.7ms)
+
+
+Started GET "/assets/api/ajax/add_chat_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/api/ajax/chat_filter_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/api/ajax/request_chat_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/api/ajax/chat_remove_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/bootstrap_configuration.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/dark.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/easy-opener.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/flexslider.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/gridGallery.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/isotope.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/mqueries.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/retina.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:13 +0530
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/accordion.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/menu.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/autocomplete.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/droppable.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/effect-blind.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/effect-bounce.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/effect-clip.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/effect-drop.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/effect-explode.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/effect-fade.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/effect-fold.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/effect-highlight.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/effect-size.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/effect-scale.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/effect-puff.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/effect-pulsate.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/effect-shake.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/effect-slide.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/effect-transfer.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/progressbar.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/selectable.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/selectmenu.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/slider.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/spinner.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui/tooltip.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:14 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/ckeditor/init.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/api/ajax/add_chat_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/api/ajax/chat_filter_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/api/ajax/chat_remove_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/api/ajax/request_chat_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/gridGallery.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/gridGallery.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/jquery.bgvideo.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/jquery.counter.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/jquery.easing.1.3.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/jquery.easing.compatibility.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/jquery.easy-opener.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/jquery.fitvids.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/jquery.flexslider.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/jquery.isotope.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/jquery.modernizr.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/jquery.parallax.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/jquery.scroll.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/jquery.themepunch.plugins.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/jquery.themepunch.revolution.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/jquery.themepunch.revolution.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/jquery.visible.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/owl.carousel.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/retina.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:15 +0530
+
+
+Started GET "/assets/rotate-patch.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:16 +0530
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:16 +0530
+
+
+Started GET "/assets/xone-form.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:16 +0530
+
+
+Started GET "/assets/xone-header.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:16 +0530
+
+
+Started GET "/assets/xone-loader.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:16 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-27 03:12:16 +0530
+
+
+Started GET "/assets/bootstrap.css" for 127.0.0.1 at 2014-07-27 03:12:16 +0530
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at 2014-07-27 03:12:16 +0530
+
+
+Started GET "/assets/jquery-1.9.1.min.js" for 127.0.0.1 at 2014-07-27 03:12:16 +0530
+
+
+Started GET "/assets/rotate-patch.js" for 127.0.0.1 at 2014-07-27 03:12:16 +0530
+
+
+Started GET "/assets/gridGallery.min.js" for 127.0.0.1 at 2014-07-27 03:12:16 +0530
+
+
+Started GET "/assets/headerlogo.png" for 127.0.0.1 at 2014-07-27 03:12:16 +0530
+
+
+Started GET "/assets/fblogin.png" for 127.0.0.1 at 2014-07-27 03:12:16 +0530
+
+
+Started GET "/assets/footerlogo.png" for 127.0.0.1 at 2014-07-27 03:12:16 +0530
+
+
+Started GET "/assets/coverimage2.jpg" for 127.0.0.1 at 2014-07-27 03:12:17 +0530
+
+
+Started GET "/assets/social-icons.png" for 127.0.0.1 at 2014-07-27 03:12:17 +0530
+
+
+Started GET "/assets/bar.png" for 127.0.0.1 at 2014-07-27 03:12:17 +0530
+
+
+Started GET "/img/loader.gif" for 127.0.0.1 at 2014-07-27 03:12:17 +0530
+
+ActionController::RoutingError (No route matches [GET] "/img/loader.gif"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (13.2ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (81.5ms)
+
+
+Started GET "/posts/inbox" for 127.0.0.1 at 2014-07-27 03:12:24 +0530
+Processing by PostsController#inbox as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mActsAsMessageable::Message Load (0.2ms)[0m  [1mSELECT `messages`.* FROM `messages` WHERE `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`recipient_delete` = 0 ORDER BY created_at desc[0m
+  Rendered posts/inbox.html.erb within layouts/application (25.8ms)
+  Rendered elements/_navbar.html.erb (1.5ms)
+Completed 200 OK in 526ms (Views: 92.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2014-07-27 03:12:35 +0530
+
+ActionController::RoutingError (No route matches [GET] "/messages"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (81.5ms)
+
+
+Started GET "/messages/index" for 127.0.0.1 at 2014-07-27 03:13:07 +0530
+Processing by MessagesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  [1m[35m (109.0ms)[0m  SELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 2 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0
+  [1m[36m (12.6ms)[0m  [1mSELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 4 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 5 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0
+  [1m[36m (3.0ms)[0m  [1mSELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 6 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0[0m
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 7 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 8 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0[0m
+  [1m[35m (3.4ms)[0m  SELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 9 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0
+  Rendered messages/index.html.erb (153.2ms)
+Completed 200 OK in 164ms (Views: 24.7ms | ActiveRecord: 131.2ms)
+
+
+Started POST "/api/ajax/request_chat_ajax" for 127.0.0.1 at 2014-07-27 03:13:19 +0530
+Processing by Api::Ajax::RequestChatAjaxController#create as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mActsAsMessageable::Message Load (0.8ms)[0m  [1mSELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 4 ORDER BY created_at desc[0m
+  [1m[35mActsAsMessageable::Message Load (0.8ms)[0m  SELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 4 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 4 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 1 ORDER BY created_at desc
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+  Rendered api/ajax/request_chat_ajax/create.html.erb (4.9ms)
+Completed 200 OK in 35ms (Views: 8.9ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/api/ajax/request_chat_ajax/refresh_unreadMessages_ajax" for 127.0.0.1 at 2014-07-27 03:13:19 +0530
+Processing by Api::Ajax::RequestChatAjaxController#refresh_unreadMessages_ajax as */*
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mActsAsMessageable::Message Load (0.7ms)[0m  SELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 4 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0 ORDER BY created_at desc
+  [1m[36m (231.2ms)[0m  [1mUPDATE messages set opened= true where id in (8) [0m
+  Rendered api/ajax/request_chat_ajax/refresh_unreadMessages_ajax.html.erb (0.8ms)
+Completed 200 OK in 251ms (Views: 10.6ms | ActiveRecord: 232.7ms)
+
+
+Started POST "/api/ajax/request_chat_ajax" for 127.0.0.1 at 2014-07-27 03:14:43 +0530
+Processing by Api::Ajax::RequestChatAjaxController#create as */*
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mActsAsMessageable::Message Load (0.5ms)[0m  SELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 2 ORDER BY created_at desc
+  [1m[36mActsAsMessageable::Message Load (0.6ms)[0m  [1mSELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 2 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 2 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 1 ORDER BY created_at desc[0m
+  Rendered api/ajax/request_chat_ajax/create.html.erb (0.2ms)
+Completed 200 OK in 12ms (Views: 3.9ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/ajax/request_chat_ajax/refresh_unreadMessages_ajax" for 127.0.0.1 at 2014-07-27 03:14:43 +0530
+Processing by Api::Ajax::RequestChatAjaxController#refresh_unreadMessages_ajax as */*
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mActsAsMessageable::Message Load (260.4ms)[0m  SELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 2 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0 ORDER BY created_at desc
+  Rendered api/ajax/request_chat_ajax/refresh_unreadMessages_ajax.html.erb (0.2ms)
+Completed 200 OK in 275ms (Views: 9.2ms | ActiveRecord: 260.8ms)
+
+
+Started POST "/api/ajax/request_chat_ajax" for 127.0.0.1 at 2014-07-27 03:14:47 +0530
+Processing by Api::Ajax::RequestChatAjaxController#create as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mActsAsMessageable::Message Load (0.8ms)[0m  [1mSELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 4 ORDER BY created_at desc[0m
+  [1m[35mActsAsMessageable::Message Load (0.7ms)[0m  SELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 4 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 4 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 1 ORDER BY created_at desc
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+  Rendered api/ajax/request_chat_ajax/create.html.erb (4.2ms)
+Completed 200 OK in 23ms (Views: 8.3ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/api/ajax/request_chat_ajax/refresh_unreadMessages_ajax" for 127.0.0.1 at 2014-07-27 03:14:48 +0530
+Processing by Api::Ajax::RequestChatAjaxController#refresh_unreadMessages_ajax as */*
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mActsAsMessageable::Message Load (11.7ms)[0m  SELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 4 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0 ORDER BY created_at desc
+  Rendered api/ajax/request_chat_ajax/refresh_unreadMessages_ajax.html.erb (0.1ms)
+Completed 200 OK in 26ms (Views: 6.6ms | ActiveRecord: 12.1ms)
+
+
+Started POST "/api/ajax/request_chat_ajax" for 127.0.0.1 at 2014-07-27 03:14:50 +0530
+Processing by Api::Ajax::RequestChatAjaxController#create as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mActsAsMessageable::Message Load (0.9ms)[0m  [1mSELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 5 ORDER BY created_at desc[0m
+  [1m[35mActsAsMessageable::Message Load (0.9ms)[0m  SELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 5 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 5 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 1 ORDER BY created_at desc
+  Rendered api/ajax/request_chat_ajax/create.html.erb (0.4ms)
+Completed 200 OK in 25ms (Views: 10.5ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/api/ajax/request_chat_ajax/refresh_unreadMessages_ajax" for 127.0.0.1 at 2014-07-27 03:14:50 +0530
+Processing by Api::Ajax::RequestChatAjaxController#refresh_unreadMessages_ajax as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mActsAsMessageable::Message Load (1.4ms)[0m  [1mSELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 5 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0 ORDER BY created_at desc[0m
+  Rendered api/ajax/request_chat_ajax/refresh_unreadMessages_ajax.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 5.9ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/api/ajax/request_chat_ajax" for 127.0.0.1 at 2014-07-27 03:14:52 +0530
+Processing by Api::Ajax::RequestChatAjaxController#create as */*
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mActsAsMessageable::Message Load (0.8ms)[0m  SELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 6 ORDER BY created_at desc
+  [1m[36mActsAsMessageable::Message Load (15.8ms)[0m  [1mSELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 6 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 6 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 1 ORDER BY created_at desc[0m
+  Rendered api/ajax/request_chat_ajax/create.html.erb (0.2ms)
+Completed 200 OK in 33ms (Views: 7.7ms | ActiveRecord: 17.3ms)
+
+
+Started POST "/api/ajax/request_chat_ajax/refresh_unreadMessages_ajax" for 127.0.0.1 at 2014-07-27 03:14:52 +0530
+Processing by Api::Ajax::RequestChatAjaxController#refresh_unreadMessages_ajax as */*
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mActsAsMessageable::Message Load (0.9ms)[0m  SELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 6 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0 ORDER BY created_at desc
+  Rendered api/ajax/request_chat_ajax/refresh_unreadMessages_ajax.html.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 4.4ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/ajax/request_chat_ajax" for 127.0.0.1 at 2014-07-27 03:14:55 +0530
+Processing by Api::Ajax::RequestChatAjaxController#create as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mActsAsMessageable::Message Load (0.4ms)[0m  [1mSELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 4 ORDER BY created_at desc[0m
+  [1m[35mActsAsMessageable::Message Load (0.4ms)[0m  SELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 4 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 4 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 1 ORDER BY created_at desc
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+  Rendered api/ajax/request_chat_ajax/create.html.erb (3.4ms)
+Completed 200 OK in 34ms (Views: 9.8ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/api/ajax/request_chat_ajax/refresh_unreadMessages_ajax" for 127.0.0.1 at 2014-07-27 03:14:55 +0530
+Processing by Api::Ajax::RequestChatAjaxController#refresh_unreadMessages_ajax as */*
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mActsAsMessageable::Message Load (0.2ms)[0m  SELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 4 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0 ORDER BY created_at desc
+  Rendered api/ajax/request_chat_ajax/refresh_unreadMessages_ajax.html.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 4.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/ajax/request_chat_ajax" for 127.0.0.1 at 2014-07-27 03:15:37 +0530
+Processing by Api::Ajax::RequestChatAjaxController#create as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mActsAsMessageable::Message Load (0.3ms)[0m  [1mSELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 2 ORDER BY created_at desc[0m
+  [1m[35mActsAsMessageable::Message Load (0.2ms)[0m  SELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 2 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 2 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 1 ORDER BY created_at desc
+  Rendered api/ajax/request_chat_ajax/create.html.erb (0.2ms)
+Completed 200 OK in 11ms (Views: 3.9ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/ajax/request_chat_ajax/refresh_unreadMessages_ajax" for 127.0.0.1 at 2014-07-27 03:15:37 +0530
+Processing by Api::Ajax::RequestChatAjaxController#refresh_unreadMessages_ajax as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mActsAsMessageable::Message Load (0.4ms)[0m  [1mSELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 2 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0 ORDER BY created_at desc[0m
+  Rendered api/ajax/request_chat_ajax/refresh_unreadMessages_ajax.html.erb (0.3ms)
+Completed 200 OK in 17ms (Views: 7.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/ajax/add_chat_ajax" for 127.0.0.1 at 2014-07-27 03:15:55 +0530
+Processing by Api::Ajax::AddChatAjaxController#create as */*
+  Parameters: {"id"=>"2", "message"=>"hi how are you kishore cheruku"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (399.6ms)[0m  [1mINSERT INTO `messages` (`body`, `created_at`, `received_messageable_id`, `received_messageable_type`, `sent_messageable_id`, `sent_messageable_type`, `updated_at`) VALUES ('hi how are you kishore cheruku', '2014-07-26 21:45:55', 2, 'User', 1, 'User', '2014-07-26 21:45:55')[0m
+  [1m[35m (229.5ms)[0m  COMMIT
+  [1m[36mActsAsMessageable::Message Load (1.7ms)[0m  [1mSELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 2 ORDER BY created_at desc[0m
+  [1m[35mActsAsMessageable::Message Load (0.9ms)[0m  SELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 2 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 2 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 1 ORDER BY created_at desc
+  Rendered api/ajax/add_chat_ajax/create.html.erb (3.3ms)
+Completed 200 OK in 782ms (Views: 13.2ms | ActiveRecord: 632.5ms)
+
+
+Started GET "/messages/profile.php?id=1" for 127.0.0.1 at 2014-07-27 03:16:01 +0530
+
+ActionController::RoutingError (No route matches [GET] "/messages/profile.php"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (13.2ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (97.4ms)
+
+
+Started POST "/api/ajax/request_chat_ajax" for 127.0.0.1 at 2014-07-27 03:16:08 +0530
+Processing by Api::Ajax::RequestChatAjaxController#create as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mActsAsMessageable::Message Load (0.3ms)[0m  [1mSELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 2 ORDER BY created_at desc[0m
+  [1m[35mActsAsMessageable::Message Load (0.2ms)[0m  SELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 2 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 2 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 1 ORDER BY created_at desc
+  Rendered api/ajax/request_chat_ajax/create.html.erb (0.4ms)
+Completed 200 OK in 16ms (Views: 5.7ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/ajax/request_chat_ajax/refresh_unreadMessages_ajax" for 127.0.0.1 at 2014-07-27 03:16:08 +0530
+Processing by Api::Ajax::RequestChatAjaxController#refresh_unreadMessages_ajax as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mActsAsMessageable::Message Load (0.8ms)[0m  [1mSELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 2 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0 ORDER BY created_at desc[0m
+  Rendered api/ajax/request_chat_ajax/refresh_unreadMessages_ajax.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 4.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/img/loader.gif" for 127.0.0.1 at 2014-07-27 03:16:19 +0530
+
+ActionController::RoutingError (No route matches [GET] "/img/loader.gif"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.1ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (92.3ms)
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-07-27 03:16:22 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"X3yCC3GFUDpzYtdJxKKAP886C5uQbZeq6iG7XXBv8pE="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-27 03:16:22 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.erb within layouts/application (22.5ms)
+  Rendered elements/_navbar.html.erb (0.7ms)
+Completed 200 OK in 91ms (Views: 89.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/files/css/bootstrap.min.css" for 127.0.0.1 at 2014-07-27 03:16:22 +0530
+
+ActionController::RoutingError (No route matches [GET] "/files/css/bootstrap.min.css"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.5ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (83.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/api/ajax/chat_filter_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/api/ajax/add_chat_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/api/ajax/chat_remove_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/api/ajax/request_chat_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/bootstrap_configuration.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/dark.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/easy-opener.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/flexslider.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/gridGallery.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/isotope.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/mqueries.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/retina.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/accordion.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/menu.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/autocomplete.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/droppable.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/effect-blind.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/effect-bounce.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/effect-clip.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/effect-drop.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/effect-explode.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/effect-fade.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/effect-fold.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/effect-highlight.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/effect-size.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/effect-scale.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/effect-puff.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/effect-pulsate.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/effect-shake.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/effect-slide.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/effect-transfer.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/progressbar.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/selectable.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/selectmenu.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/slider.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/spinner.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui/tooltip.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:23 +0530
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/ckeditor/init.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/api/ajax/add_chat_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/api/ajax/chat_filter_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/api/ajax/chat_remove_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/api/ajax/request_chat_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/gridGallery.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/gridGallery.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/jquery.bgvideo.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/jquery.counter.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/jquery.easing.1.3.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/jquery.easing.compatibility.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/jquery.easy-opener.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/jquery.fitvids.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/jquery.flexslider.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/jquery.isotope.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/jquery.modernizr.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/jquery.parallax.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/jquery.scroll.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/jquery.themepunch.plugins.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/jquery.themepunch.revolution.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/jquery.themepunch.revolution.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/jquery.visible.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/owl.carousel.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/retina.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/rotate-patch.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/xone-form.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/xone-header.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/xone-loader.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/bootstrap.css" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/rotate-patch.js" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/gridGallery.min.js" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/jquery-1.9.1.min.js" for 127.0.0.1 at 2014-07-27 03:16:24 +0530
+
+
+Started GET "/assets/headerlogo.png" for 127.0.0.1 at 2014-07-27 03:16:25 +0530
+
+
+Started GET "/assets/fblogin.png" for 127.0.0.1 at 2014-07-27 03:16:25 +0530
+
+
+Started GET "/assets/footerlogo.png" for 127.0.0.1 at 2014-07-27 03:16:25 +0530
+
+
+Started GET "/assets/coverimage2.jpg" for 127.0.0.1 at 2014-07-27 03:16:25 +0530
+
+
+Started GET "/assets/social-icons.png" for 127.0.0.1 at 2014-07-27 03:16:25 +0530
+
+
+Started GET "/assets/bar.png" for 127.0.0.1 at 2014-07-27 03:16:25 +0530
+
+
+Started GET "/img/loader.gif" for 127.0.0.1 at 2014-07-27 03:16:25 +0530
+
+ActionController::RoutingError (No route matches [GET] "/img/loader.gif"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.0ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (78.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-27 03:16:40 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (73.3ms)
+  Rendered elements/_navbar.html.erb (0.9ms)
+Completed 200 OK in 145ms (Views: 142.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-27 03:17:29 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+6YrT5qNb8SKSkqkY2CcBK8UUw6DAtE9rOIberm1Rhw=", "user"=>{"login"=>"kishore555ds@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (22.6ms)[0m  SELECT `users`.* FROM `users` WHERE (lower(username) = 'kishore555ds@gmail.com' OR lower(email) = 'kishore555ds@gmail.com') ORDER BY `users`.`id` ASC LIMIT 1
+Completed 401 Unauthorized in 119ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+6YrT5qNb8SKSkqkY2CcBK8UUw6DAtE9rOIberm1Rhw=", "user"=>{"login"=>"kishore555ds@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+WARNING: Can't mass-assign protected attributes for User: login, remember_me
+
+  Rendered devise/shared/_links.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+  Rendered elements/_navbar.html.erb (0.5ms)
+Completed 200 OK in 161ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/files/css/bootstrap.min.css" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+ActionController::RoutingError (No route matches [GET] "/files/css/bootstrap.min.css"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.5ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (116.8ms)
+
+
+Started GET "/assets/api/ajax/chat_filter_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/api/ajax/chat_remove_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/api/ajax/add_chat_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/api/ajax/request_chat_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/bootstrap_configuration.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/dark.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/easy-opener.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/flexslider.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/gridGallery.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/isotope.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/mqueries.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/retina.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/jquery-ui/accordion.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/jquery-ui/menu.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/jquery-ui/autocomplete.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:30 +0530
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/droppable.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/effect-blind.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/effect-bounce.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/effect-clip.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/effect-drop.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/effect-explode.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/effect-fade.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/effect-fold.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/effect-highlight.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/effect-size.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/effect-scale.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/effect-puff.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/effect-pulsate.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/effect-shake.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/effect-slide.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/effect-transfer.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/progressbar.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/selectable.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/selectmenu.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/slider.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/spinner.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui/tooltip.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/ckeditor/init.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/api/ajax/add_chat_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/api/ajax/chat_filter_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/api/ajax/chat_remove_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/api/ajax/request_chat_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/gridGallery.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/gridGallery.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery.bgvideo.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery.counter.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery.easing.1.3.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery.easing.compatibility.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery.easy-opener.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery.fitvids.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:31 +0530
+
+
+Started GET "/assets/jquery.flexslider.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/jquery.isotope.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/jquery.modernizr.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/jquery.parallax.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/jquery.scroll.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/jquery.themepunch.plugins.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/jquery.themepunch.revolution.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/jquery.themepunch.revolution.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/jquery.visible.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/owl.carousel.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/retina.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/rotate-patch.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/xone-form.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/xone-header.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/xone-loader.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/bootstrap.css" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/headerlogo.png" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/footerlogo.png" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/fblogin.png" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started GET "/assets/social-icons.png" for 127.0.0.1 at 2014-07-27 03:17:32 +0530
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-27 03:17:40 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+6YrT5qNb8SKSkqkY2CcBK8UUw6DAtE9rOIberm1Rhw=", "user"=>{"login"=>"kishorecheruku.ror@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (lower(username) = 'kishorecheruku.ror@gmail.com' OR lower(email) = 'kishorecheruku.ror@gmail.com') ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 96ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+6YrT5qNb8SKSkqkY2CcBK8UUw6DAtE9rOIberm1Rhw=", "user"=>{"login"=>"kishorecheruku.ror@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+WARNING: Can't mass-assign protected attributes for User: login, remember_me
+
+  Rendered devise/shared/_links.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.4ms)
+  Rendered elements/_navbar.html.erb (0.4ms)
+Completed 200 OK in 161ms (Views: 66.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/ajax/add_chat_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/api/ajax/chat_filter_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/api/ajax/request_chat_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/files/css/bootstrap.min.css" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+ActionController::RoutingError (No route matches [GET] "/files/css/bootstrap.min.css"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.1ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (83.1ms)
+
+
+Started GET "/assets/api/ajax/chat_remove_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/bootstrap_configuration.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/dark.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/easy-opener.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/flexslider.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/gridGallery.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/isotope.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/mqueries.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/retina.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/accordion.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/menu.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/autocomplete.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/droppable.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/effect-blind.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/effect-clip.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/effect-bounce.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/effect-drop.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/effect-explode.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/effect-fade.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/effect-fold.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/effect-highlight.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/effect-size.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/effect-scale.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/effect-puff.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/effect-pulsate.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/effect-shake.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/effect-slide.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/effect-transfer.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:41 +0530
+
+
+Started GET "/assets/jquery-ui/progressbar.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery-ui/selectable.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery-ui/selectmenu.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery-ui/slider.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery-ui/spinner.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery-ui/tooltip.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/ckeditor/init.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/api/ajax/add_chat_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/api/ajax/chat_filter_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/api/ajax/chat_remove_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/api/ajax/request_chat_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/gridGallery.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/gridGallery.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery.bgvideo.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery.counter.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery.easing.1.3.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery.easing.compatibility.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery.easy-opener.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery.fitvids.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery.flexslider.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery.isotope.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery.modernizr.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery.scroll.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery.parallax.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery.themepunch.plugins.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery.themepunch.revolution.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery.themepunch.revolution.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/jquery.visible.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/owl.carousel.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/retina.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/rotate-patch.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/xone-form.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:42 +0530
+
+
+Started GET "/assets/xone-header.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:43 +0530
+
+
+Started GET "/assets/xone-loader.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:43 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:43 +0530
+
+
+Started GET "/assets/bootstrap.css" for 127.0.0.1 at 2014-07-27 03:17:43 +0530
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at 2014-07-27 03:17:43 +0530
+
+
+Started GET "/assets/headerlogo.png" for 127.0.0.1 at 2014-07-27 03:17:43 +0530
+
+
+Started GET "/assets/fblogin.png" for 127.0.0.1 at 2014-07-27 03:17:43 +0530
+
+
+Started GET "/assets/footerlogo.png" for 127.0.0.1 at 2014-07-27 03:17:43 +0530
+
+
+Started GET "/assets/social-icons.png" for 127.0.0.1 at 2014-07-27 03:17:43 +0530
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-27 03:17:56 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+6YrT5qNb8SKSkqkY2CcBK8UUw6DAtE9rOIberm1Rhw=", "user"=>{"login"=>"kishorecheruku.ror@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (lower(username) = 'kishorecheruku.ror@gmail.com' OR lower(email) = 'kishorecheruku.ror@gmail.com') ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (143.0ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2014-07-15 05:34:11', `current_sign_in_at` = '2014-07-26 21:47:56', `sign_in_count` = 3, `updated_at` = '2014-07-26 21:47:56' WHERE `users`.`id` = 2
+  [1m[36m (244.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 508ms (ActiveRecord: 387.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.erb within layouts/application (13.0ms)
+  Rendered elements/_navbar.html.erb (0.6ms)
+Completed 200 OK in 81ms (Views: 77.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/files/css/bootstrap.min.css" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+ActionController::RoutingError (No route matches [GET] "/files/css/bootstrap.min.css"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.0ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (77.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/api/ajax/chat_remove_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/api/ajax/chat_filter_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/api/ajax/request_chat_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/api/ajax/add_chat_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/bootstrap_configuration.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/dark.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/easy-opener.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/flexslider.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/gridGallery.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/isotope.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/mqueries.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/retina.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:57 +0530
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/accordion.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/menu.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/autocomplete.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/droppable.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-blind.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-bounce.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-clip.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-drop.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-explode.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-fade.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-fold.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-highlight.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-size.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-scale.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-puff.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-pulsate.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-shake.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-slide.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-transfer.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/progressbar.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/selectable.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/selectmenu.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/slider.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/spinner.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui/tooltip.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/ckeditor/init.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/api/ajax/add_chat_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/api/ajax/chat_filter_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/api/ajax/chat_remove_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/api/ajax/request_chat_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:58 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/gridGallery.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/gridGallery.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/jquery.bgvideo.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/jquery.counter.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/jquery.easing.1.3.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/jquery.easing.compatibility.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/jquery.easy-opener.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/jquery.fitvids.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/jquery.flexslider.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/jquery.isotope.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/jquery.modernizr.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/jquery.parallax.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/jquery.scroll.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/jquery.themepunch.plugins.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/jquery.themepunch.revolution.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/jquery.themepunch.revolution.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/jquery.visible.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/owl.carousel.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/retina.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/rotate-patch.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/xone-form.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/xone-header.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/xone-loader.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/bootstrap.css" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/jquery-1.9.1.min.js" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/rotate-patch.js" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/gridGallery.min.js" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/headerlogo.png" for 127.0.0.1 at 2014-07-27 03:17:59 +0530
+
+
+Started GET "/assets/coverimage2.jpg" for 127.0.0.1 at 2014-07-27 03:18:00 +0530
+
+
+Started GET "/assets/footerlogo.png" for 127.0.0.1 at 2014-07-27 03:18:00 +0530
+
+
+Started GET "/assets/fblogin.png" for 127.0.0.1 at 2014-07-27 03:18:00 +0530
+
+
+Started GET "/assets/social-icons.png" for 127.0.0.1 at 2014-07-27 03:18:00 +0530
+
+
+Started GET "/assets/bar.png" for 127.0.0.1 at 2014-07-27 03:18:00 +0530
+
+
+Started GET "/img/loader.gif" for 127.0.0.1 at 2014-07-27 03:18:00 +0530
+
+ActionController::RoutingError (No route matches [GET] "/img/loader.gif"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.4ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (79.4ms)
+
+
+Started GET "/messages/index" for 127.0.0.1 at 2014-07-27 03:18:17 +0530
+Processing by MessagesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 2 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 2 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 1 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 2 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 2 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 2 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 4 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 2 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 2 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 2 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 5 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 2 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 2 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 2 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 6 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 2 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 2 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 2 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 7 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 2 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 2 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 2 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 8 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 2 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 2 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 2 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 9 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 2 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0
+  Rendered messages/index.html.erb (22.7ms)
+Completed 200 OK in 29ms (Views: 18.7ms | ActiveRecord: 6.3ms)
+
+
+Started POST "/api/ajax/request_chat_ajax" for 127.0.0.1 at 2014-07-27 03:18:23 +0530
+Processing by Api::Ajax::RequestChatAjaxController#create as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mActsAsMessageable::Message Load (0.2ms)[0m  [1mSELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 2 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 2 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 1 ORDER BY created_at desc[0m
+  [1m[35mActsAsMessageable::Message Load (0.2ms)[0m  SELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 2 ORDER BY created_at desc
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered api/ajax/request_chat_ajax/create.html.erb (2.4ms)
+Completed 200 OK in 22ms (Views: 6.4ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/ajax/request_chat_ajax/refresh_unreadMessages_ajax" for 127.0.0.1 at 2014-07-27 03:18:23 +0530
+Processing by Api::Ajax::RequestChatAjaxController#refresh_unreadMessages_ajax as */*
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mActsAsMessageable::Message Load (0.7ms)[0m  SELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 2 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 2 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 1 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 2 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0 ORDER BY created_at desc
+  [1m[36m (255.2ms)[0m  [1mUPDATE messages set opened= true where id in (9) [0m
+  Rendered api/ajax/request_chat_ajax/refresh_unreadMessages_ajax.html.erb (0.1ms)
+Completed 200 OK in 267ms (Views: 4.2ms | ActiveRecord: 256.4ms)
+
+
+Started POST "/api/ajax/add_chat_ajax" for 127.0.0.1 at 2014-07-27 03:18:39 +0530
+Processing by Api::Ajax::AddChatAjaxController#create as */*
+  Parameters: {"id"=>"1", "message"=>"yup fine yar\n"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO `messages` (`body`, `created_at`, `received_messageable_id`, `received_messageable_type`, `sent_messageable_id`, `sent_messageable_type`, `updated_at`) VALUES ('yup fine yar\n', '2014-07-26 21:48:39', 1, 'User', 2, 'User', '2014-07-26 21:48:39')[0m
+  [1m[35m (558.1ms)[0m  COMMIT
+  [1m[36mActsAsMessageable::Message Load (0.6ms)[0m  [1mSELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 2 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 2 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 1 ORDER BY created_at desc[0m
+  [1m[35mActsAsMessageable::Message Load (0.4ms)[0m  SELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 2 ORDER BY created_at desc
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered api/ajax/add_chat_ajax/create.html.erb (2.1ms)
+Completed 200 OK in 583ms (Views: 9.5ms | ActiveRecord: 561.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-27 03:19:36 +0530
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.erb within layouts/application (14.5ms)
+  Rendered elements/_navbar.html.erb (0.6ms)
+Completed 200 OK in 81ms (Views: 78.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/files/css/bootstrap.min.css" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+ActionController::RoutingError (No route matches [GET] "/files/css/bootstrap.min.css"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.0ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (80.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/api/ajax/add_chat_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/api/ajax/request_chat_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/api/ajax/chat_remove_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/api/ajax/chat_filter_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/bootstrap_configuration.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/dark.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/easy-opener.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/flexslider.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/gridGallery.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/isotope.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/mqueries.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/retina.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/accordion.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/menu.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/autocomplete.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/droppable.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/effect-blind.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/effect-bounce.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/effect-clip.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/effect-drop.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/effect-explode.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/effect-fade.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/effect-fold.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/effect-highlight.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/effect-size.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/effect-scale.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/effect-puff.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/effect-pulsate.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:37 +0530
+
+
+Started GET "/assets/jquery-ui/effect-shake.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery-ui/effect-slide.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery-ui/effect-transfer.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery-ui/progressbar.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery-ui/selectable.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery-ui/selectmenu.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery-ui/slider.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery-ui/spinner.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery-ui/tooltip.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/ckeditor/init.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/api/ajax/add_chat_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/api/ajax/chat_filter_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/api/ajax/chat_remove_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/api/ajax/request_chat_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/gridGallery.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/gridGallery.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery.bgvideo.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery.counter.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery.easing.1.3.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery.easing.compatibility.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery.easy-opener.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery.fitvids.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery.flexslider.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery.isotope.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery.modernizr.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery.parallax.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery.scroll.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery.themepunch.plugins.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery.themepunch.revolution.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery.themepunch.revolution.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/jquery.visible.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/owl.carousel.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/retina.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/rotate-patch.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:38 +0530
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:39 +0530
+
+
+Started GET "/assets/xone-form.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:39 +0530
+
+
+Started GET "/assets/xone-header.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:39 +0530
+
+
+Started GET "/assets/xone-loader.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:39 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:39 +0530
+
+
+Started GET "/assets/bootstrap.css" for 127.0.0.1 at 2014-07-27 03:19:39 +0530
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at 2014-07-27 03:19:39 +0530
+
+
+Started GET "/assets/jquery-1.9.1.min.js" for 127.0.0.1 at 2014-07-27 03:19:39 +0530
+
+
+Started GET "/assets/rotate-patch.js" for 127.0.0.1 at 2014-07-27 03:19:39 +0530
+
+
+Started GET "/assets/gridGallery.min.js" for 127.0.0.1 at 2014-07-27 03:19:39 +0530
+
+
+Started GET "/assets/fblogin.png" for 127.0.0.1 at 2014-07-27 03:19:39 +0530
+
+
+Started GET "/assets/headerlogo.png" for 127.0.0.1 at 2014-07-27 03:19:39 +0530
+
+
+Started GET "/assets/footerlogo.png" for 127.0.0.1 at 2014-07-27 03:19:39 +0530
+
+
+Started GET "/assets/coverimage2.jpg" for 127.0.0.1 at 2014-07-27 03:19:39 +0530
+
+
+Started GET "/assets/social-icons.png" for 127.0.0.1 at 2014-07-27 03:19:39 +0530
+
+
+Started GET "/img/loader.gif" for 127.0.0.1 at 2014-07-27 03:19:39 +0530
+
+ActionController::RoutingError (No route matches [GET] "/img/loader.gif"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.8ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (82.9ms)
+
+
+Started GET "/assets/bar.png" for 127.0.0.1 at 2014-07-27 03:19:40 +0530
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7S121z9qbUs0s5totyenh2L9RTMOlMnwdB7xfNdGzxk="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.erb within layouts/application (13.2ms)
+  Rendered elements/_navbar.html.erb (0.7ms)
+Completed 200 OK in 75ms (Views: 73.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/api/ajax/add_chat_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/api/ajax/chat_remove_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/api/ajax/chat_filter_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/api/ajax/request_chat_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/files/css/bootstrap.min.css" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+ActionController::RoutingError (No route matches [GET] "/files/css/bootstrap.min.css"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.1ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (77.4ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/bootstrap_configuration.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/dark.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/easy-opener.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/flexslider.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/gridGallery.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/isotope.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/mqueries.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/retina.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/jquery-ui/accordion.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/jquery-ui/menu.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:43 +0530
+
+
+Started GET "/assets/jquery-ui/autocomplete.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/droppable.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/effect-blind.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/effect-bounce.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/effect-clip.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/effect-drop.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/effect-explode.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/effect-fade.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/effect-fold.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/effect-highlight.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/effect-size.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/effect-scale.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/effect-puff.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/effect-pulsate.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/effect-shake.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/effect-slide.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/effect-transfer.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/progressbar.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/selectable.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/selectmenu.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/slider.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/spinner.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui/tooltip.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/ckeditor/init.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/api/ajax/add_chat_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/api/ajax/chat_filter_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/api/ajax/chat_remove_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/api/ajax/request_chat_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/gridGallery.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/gridGallery.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery.bgvideo.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery.counter.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery.easing.1.3.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:44 +0530
+
+
+Started GET "/assets/jquery.easing.compatibility.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/jquery.easy-opener.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/jquery.fitvids.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/jquery.flexslider.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/jquery.isotope.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/jquery.modernizr.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/jquery.parallax.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/jquery.scroll.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/jquery.themepunch.plugins.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/jquery.themepunch.revolution.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/jquery.themepunch.revolution.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/jquery.visible.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/owl.carousel.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/retina.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/rotate-patch.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/xone-form.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/xone-header.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/xone-loader.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/bootstrap.css" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/jquery-1.9.1.min.js" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/rotate-patch.js" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/gridGallery.min.js" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/headerlogo.png" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/coverimage2.jpg" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/fblogin.png" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/footerlogo.png" for 127.0.0.1 at 2014-07-27 03:19:45 +0530
+
+
+Started GET "/assets/social-icons.png" for 127.0.0.1 at 2014-07-27 03:19:46 +0530
+
+
+Started GET "/assets/bar.png" for 127.0.0.1 at 2014-07-27 03:19:46 +0530
+
+
+Started GET "/img/loader.gif" for 127.0.0.1 at 2014-07-27 03:19:46 +0530
+
+ActionController::RoutingError (No route matches [GET] "/img/loader.gif"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (87.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-27 03:19:52 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.9ms)
+  Rendered elements/_navbar.html.erb (0.8ms)
+Completed 200 OK in 73ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-27 03:19:56 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2A2oUjMSacOG7c7iX/9SOQ7F5sJ0nHsVagnVEp3TbEU=", "user"=>{"login"=>"kishoreror123", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mUser Load (22.0ms)[0m  SELECT `users`.* FROM `users` WHERE (lower(username) = 'kishoreror123' OR lower(email) = 'kishoreror123') ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (146.7ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2014-07-26 20:38:17', `current_sign_in_at` = '2014-07-26 21:49:57', `sign_in_count` = 27, `updated_at` = '2014-07-26 21:49:57' WHERE `users`.`id` = 1
+  [1m[36m (164.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 448ms (ActiveRecord: 332.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-27 03:19:57 +0530
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
+  Rendered posts/index.html.erb within layouts/application (12.5ms)
+  Rendered elements/_navbar.html.erb (0.6ms)
+Completed 200 OK in 81ms (Views: 77.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/files/css/bootstrap.min.css" for 127.0.0.1 at 2014-07-27 03:19:57 +0530
+
+ActionController::RoutingError (No route matches [GET] "/files/css/bootstrap.min.css"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.2ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (76.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:57 +0530
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:57 +0530
+
+
+Started GET "/assets/api/ajax/chat_filter_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:57 +0530
+
+
+Started GET "/assets/api/ajax/chat_remove_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:57 +0530
+
+
+Started GET "/assets/api/ajax/request_chat_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:57 +0530
+
+
+Started GET "/assets/api/ajax/add_chat_ajax.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:57 +0530
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:57 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:57 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:57 +0530
+
+
+Started GET "/assets/bootstrap_configuration.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:57 +0530
+
+
+Started GET "/assets/dark.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:57 +0530
+
+
+Started GET "/assets/easy-opener.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:57 +0530
+
+
+Started GET "/assets/flexslider.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:57 +0530
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:57 +0530
+
+
+Started GET "/assets/gridGallery.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:57 +0530
+
+
+Started GET "/assets/isotope.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/mqueries.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/owl.carousel.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/retina.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/accordion.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/menu.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/autocomplete.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/droppable.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-blind.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-bounce.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-clip.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-drop.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-explode.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-fade.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-fold.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-highlight.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-size.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-scale.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-puff.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-pulsate.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-shake.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-slide.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/effect-transfer.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/progressbar.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/selectable.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/selectmenu.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/slider.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/spinner.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui/tooltip.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/ckeditor/init.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/api/ajax/add_chat_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/api/ajax/chat_filter_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/api/ajax/chat_remove_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/api/ajax/request_chat_ajax.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:58 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/gridGallery.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/gridGallery.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/jquery.bgvideo.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/jquery.counter.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/jquery.easing.1.3.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/jquery.easing.compatibility.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/jquery.easy-opener.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/jquery.fitvids.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/jquery.flexslider.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/jquery.isotope.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/jquery.modernizr.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/jquery.parallax.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/jquery.scroll.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/jquery.themepunch.plugins.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/jquery.themepunch.revolution.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/jquery.themepunch.revolution.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/jquery.visible.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/owl.carousel.min.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/retina.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/rotate-patch.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/xone-form.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/xone-header.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/xone-loader.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/bootstrap.css" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/rotate-patch.js" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/jquery-1.9.1.min.js" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/gridGallery.min.js" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/headerlogo.png" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/fblogin.png" for 127.0.0.1 at 2014-07-27 03:19:59 +0530
+
+
+Started GET "/assets/footerlogo.png" for 127.0.0.1 at 2014-07-27 03:20:00 +0530
+
+
+Started GET "/assets/social-icons.png" for 127.0.0.1 at 2014-07-27 03:20:00 +0530
+
+
+Started GET "/assets/coverimage2.jpg" for 127.0.0.1 at 2014-07-27 03:20:00 +0530
+
+
+Started GET "/assets/bar.png" for 127.0.0.1 at 2014-07-27 03:20:00 +0530
+
+
+Started GET "/img/loader.gif" for 127.0.0.1 at 2014-07-27 03:20:00 +0530
+
+ActionController::RoutingError (No route matches [GET] "/img/loader.gif"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nagababu/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (13.8ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/nagababu/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (81.8ms)
+
+
+Started GET "/messages/index" for 127.0.0.1 at 2014-07-27 03:20:08 +0530
+Processing by MessagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (76.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  [1m[35m (3.2ms)[0m  SELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 2 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 4 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 5 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0
+  [1m[36m (3.8ms)[0m  [1mSELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 6 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 7 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 8 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0[0m
+  [1m[35m (5.4ms)[0m  SELECT COUNT(*) FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 9 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0
+  Rendered messages/index.html.erb (43.5ms)
+Completed 200 OK in 128ms (Views: 30.1ms | ActiveRecord: 92.3ms)
+
+
+Started POST "/api/ajax/request_chat_ajax" for 127.0.0.1 at 2014-07-27 03:20:16 +0530
+Processing by Api::Ajax::RequestChatAjaxController#create as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mActsAsMessageable::Message Load (0.2ms)[0m  [1mSELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 2 ORDER BY created_at desc[0m
+  [1m[35mActsAsMessageable::Message Load (0.2ms)[0m  SELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 2 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 2 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`received_messageable_id` = 1 ORDER BY created_at desc
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  Rendered api/ajax/request_chat_ajax/create.html.erb (2.7ms)
+Completed 200 OK in 21ms (Views: 6.5ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/ajax/request_chat_ajax/refresh_unreadMessages_ajax" for 127.0.0.1 at 2014-07-27 03:20:16 +0530
+Processing by Api::Ajax::RequestChatAjaxController#refresh_unreadMessages_ajax as */*
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mActsAsMessageable::Message Load (0.8ms)[0m  SELECT `messages`.* FROM `messages` WHERE ((sent_messageable_type = 'User' and
+ sent_messageable_id = 1 and
+ sender_delete = 0 and sender_permanent_delete = 0) or
+ (received_messageable_type = 'User' and
+ received_messageable_id = 1 and
+ recipient_delete = 0 and recipient_permanent_delete = 0)) AND `messages`.`sent_messageable_id` = 2 AND `messages`.`sent_messageable_type` = 'User' AND `messages`.`received_messageable_id` = 1 AND `messages`.`received_messageable_type` = 'User' AND `messages`.`opened` = 0 ORDER BY created_at desc
+  [1m[36m (189.9ms)[0m  [1mUPDATE messages set opened= true where id in (10) [0m
+  Rendered api/ajax/request_chat_ajax/refresh_unreadMessages_ajax.html.erb (0.1ms)
+Completed 200 OK in 204ms (Views: 5.1ms | ActiveRecord: 191.2ms)
